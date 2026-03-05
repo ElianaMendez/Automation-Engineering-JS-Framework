@@ -1,123 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="580" viewBox="0 0 520 580" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="560" viewBox="0 0 520 560" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
   <defs>
-    <!-- Background gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f172a"/>
-      <stop offset="100%" style="stop-color:#1e293b"/>
-    </linearGradient>
-
-    <!-- Card gradients -->
-    <linearGradient id="triggerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#7c3aed"/>
-      <stop offset="100%" style="stop-color:#5b21b6"/>
-    </linearGradient>
-    <linearGradient id="installGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0284c7"/>
-      <stop offset="100%" style="stop-color:#0369a1"/>
-    </linearGradient>
-    <linearGradient id="testGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#059669"/>
-      <stop offset="100%" style="stop-color:#047857"/>
-    </linearGradient>
-    <linearGradient id="reportGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#d97706"/>
-      <stop offset="100%" style="stop-color:#b45309"/>
-    </linearGradient>
-
-    <!-- Glow filters -->
-    <filter id="glowPurple" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="glowBlue" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
-    </filter>
-
-    <!-- Connector arrow marker -->
+    <!-- Arrow marker -->
     <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
     </marker>
+
+    <!-- Card shadow -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
   </defs>
-
-  <!-- Background -->
-  <rect width="520" height="580" rx="16" fill="url(#bgGrad)"/>
-
-  <!-- Subtle grid pattern -->
-  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-    <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#ffffff" stroke-width="0.3" stroke-opacity="0.04"/>
-  </pattern>
-  <rect width="520" height="580" rx="16" fill="url(#grid)"/>
-
-  <!-- Title -->
-  <text x="260" y="38" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="600" letter-spacing="3" text-transform="uppercase">CI / CD PIPELINE</text>
-  <line x1="160" y1="46" x2="360" y2="46" stroke="#334155" stroke-width="1"/>
 
   <!-- ── STEP 1: CI Pipeline Trigger ── -->
   <g filter="url(#cardShadow)">
-    <rect x="110" y="62" width="300" height="86" rx="12" fill="url(#triggerGrad)" opacity="0.15"/>
-    <rect x="110" y="62" width="300" height="86" rx="12" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-opacity="0.7"/>
+    <rect x="110" y="20" width="300" height="86" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
   </g>
-  <!-- Icon circle -->
-  <circle cx="152" cy="105" r="22" fill="#7c3aed" fill-opacity="0.25"/>
-  <text x="152" y="112" text-anchor="middle" font-size="18">⚡</text>
-  <!-- Step label -->
-  <text x="178" y="96" fill="#a78bfa" font-size="10" font-weight="700" letter-spacing="2">STEP 01</text>
-  <text x="178" y="114" fill="#f1f5f9" font-size="15" font-weight="700">CI Pipeline Trigger</text>
-  <text x="178" y="132" fill="#94a3b8" font-size="11">Push · Pull Request · Schedule</text>
+  <rect x="110" y="20" width="6" height="86" rx="3" fill="#7c3aed"/>
+  <circle cx="158" cy="63" r="22" fill="#ede9fe"/>
+  <text x="158" y="70" text-anchor="middle" font-size="18">⚡</text>
+  <text x="192" y="51" fill="#7c3aed" font-size="10" font-weight="700" letter-spacing="2">STEP 01</text>
+  <text x="192" y="69" fill="#1e1b4b" font-size="15" font-weight="700">CI Pipeline Trigger</text>
+  <text x="192" y="88" fill="#6b7280" font-size="11">Push · Pull Request · Schedule</text>
 
   <!-- Connector 1→2 -->
-  <line x1="260" y1="148" x2="260" y2="178" stroke="#475569" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
-  <rect x="220" y="156" width="80" height="16" rx="8" fill="#1e293b"/>
-  <text x="260" y="168" text-anchor="middle" fill="#64748b" font-size="9" font-weight="600" letter-spacing="1">TRIGGER</text>
+  <line x1="260" y1="106" x2="260" y2="136" stroke="#d1d5db" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <rect x="218" y="114" width="84" height="16" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="260" y="126" text-anchor="middle" fill="#9ca3af" font-size="9" font-weight="600" letter-spacing="1">TRIGGER</text>
 
   <!-- ── STEP 2: Install Dependencies ── -->
   <g filter="url(#cardShadow)">
-    <rect x="110" y="182" width="300" height="86" rx="12" fill="url(#installGrad)" opacity="0.15"/>
-    <rect x="110" y="182" width="300" height="86" rx="12" fill="none" stroke="#0284c7" stroke-width="1.5" stroke-opacity="0.7"/>
+    <rect x="110" y="140" width="300" height="86" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
   </g>
-  <circle cx="152" cy="225" r="22" fill="#0284c7" fill-opacity="0.25"/>
-  <text x="152" y="232" text-anchor="middle" font-size="18">📦</text>
-  <text x="178" y="216" fill="#38bdf8" font-size="10" font-weight="700" letter-spacing="2">STEP 02</text>
-  <text x="178" y="234" fill="#f1f5f9" font-size="15" font-weight="700">Install Dependencies</text>
-  <text x="178" y="252" fill="#94a3b8" font-size="11">npm install · pip install · cache</text>
+  <rect x="110" y="140" width="6" height="86" rx="3" fill="#2563eb"/>
+  <circle cx="158" cy="183" r="22" fill="#dbeafe"/>
+  <text x="158" y="190" text-anchor="middle" font-size="18">📦</text>
+  <text x="192" y="171" fill="#2563eb" font-size="10" font-weight="700" letter-spacing="2">STEP 02</text>
+  <text x="192" y="189" fill="#1e3a8a" font-size="15" font-weight="700">Install Dependencies</text>
+  <text x="192" y="208" fill="#6b7280" font-size="11">npm install · pip install · cache</text>
 
   <!-- Connector 2→3 -->
-  <line x1="260" y1="268" x2="260" y2="298" stroke="#475569" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
-  <rect x="214" y="276" width="92" height="16" rx="8" fill="#1e293b"/>
-  <text x="260" y="288" text-anchor="middle" fill="#64748b" font-size="9" font-weight="600" letter-spacing="1">INSTALLED</text>
+  <line x1="260" y1="226" x2="260" y2="256" stroke="#d1d5db" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <rect x="212" y="234" width="96" height="16" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="260" y="246" text-anchor="middle" fill="#9ca3af" font-size="9" font-weight="600" letter-spacing="1">INSTALLED</text>
 
   <!-- ── STEP 3: Execute Tests ── -->
   <g filter="url(#cardShadow)">
-    <rect x="110" y="302" width="300" height="86" rx="12" fill="url(#testGrad)" opacity="0.15"/>
-    <rect x="110" y="302" width="300" height="86" rx="12" fill="none" stroke="#059669" stroke-width="1.5" stroke-opacity="0.7"/>
+    <rect x="110" y="260" width="300" height="86" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
   </g>
-  <circle cx="152" cy="345" r="22" fill="#059669" fill-opacity="0.25"/>
-  <text x="152" y="352" text-anchor="middle" font-size="18">🧪</text>
-  <text x="178" y="336" fill="#34d399" font-size="10" font-weight="700" letter-spacing="2">STEP 03</text>
-  <text x="178" y="354" fill="#f1f5f9" font-size="15" font-weight="700">Execute Tests</text>
-  <text x="178" y="372" fill="#94a3b8" font-size="11">Unit · Integration · Coverage</text>
+  <rect x="110" y="260" width="6" height="86" rx="3" fill="#16a34a"/>
+  <circle cx="158" cy="303" r="22" fill="#dcfce7"/>
+  <text x="158" y="310" text-anchor="middle" font-size="18">🧪</text>
+  <text x="192" y="291" fill="#16a34a" font-size="10" font-weight="700" letter-spacing="2">STEP 03</text>
+  <text x="192" y="309" fill="#14532d" font-size="15" font-weight="700">Execute Tests</text>
+  <text x="192" y="328" fill="#6b7280" font-size="11">Unit · Integration · Coverage</text>
 
   <!-- Connector 3→4 -->
-  <line x1="260" y1="388" x2="260" y2="418" stroke="#475569" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
-  <rect x="214" y="396" width="92" height="16" rx="8" fill="#1e293b"/>
-  <text x="260" y="408" text-anchor="middle" fill="#64748b" font-size="9" font-weight="600" letter-spacing="1">PASSED</text>
+  <line x1="260" y1="346" x2="260" y2="376" stroke="#d1d5db" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <rect x="218" y="354" width="84" height="16" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="260" y="366" text-anchor="middle" fill="#9ca3af" font-size="9" font-weight="600" letter-spacing="1">PASSED</text>
 
   <!-- ── STEP 4: Generate Reports ── -->
   <g filter="url(#cardShadow)">
-    <rect x="110" y="422" width="300" height="86" rx="12" fill="url(#reportGrad)" opacity="0.15"/>
-    <rect x="110" y="422" width="300" height="86" rx="12" fill="none" stroke="#d97706" stroke-width="1.5" stroke-opacity="0.7"/>
+    <rect x="110" y="380" width="300" height="86" rx="12" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
   </g>
-  <circle cx="152" cy="465" r="22" fill="#d97706" fill-opacity="0.25"/>
-  <text x="152" y="472" text-anchor="middle" font-size="18">📊</text>
-  <text x="178" y="456" fill="#fbbf24" font-size="10" font-weight="700" letter-spacing="2">STEP 04</text>
-  <text x="178" y="474" fill="#f1f5f9" font-size="15" font-weight="700">Generate Reports</text>
-  <text x="178" y="492" fill="#94a3b8" font-size="11">Coverage · Artifacts · Summary</text>
+  <rect x="110" y="380" width="6" height="86" rx="3" fill="#d97706"/>
+  <circle cx="158" cy="423" r="22" fill="#fef3c7"/>
+  <text x="158" y="430" text-anchor="middle" font-size="18">📊</text>
+  <text x="192" y="411" fill="#d97706" font-size="10" font-weight="700" letter-spacing="2">STEP 04</text>
+  <text x="192" y="429" fill="#78350f" font-size="15" font-weight="700">Generate Reports</text>
+  <text x="192" y="448" fill="#6b7280" font-size="11">Coverage · Artifacts · Summary</text>
 
   <!-- Footer -->
-  <line x1="110" y1="530" x2="410" y2="530" stroke="#334155" stroke-width="1"/>
-  <text x="260" y="552" text-anchor="middle" fill="#475569" font-size="10" letter-spacing="1">Automated  ·  Reproducible  ·  Observable</text>
+  <line x1="110" y1="490" x2="410" y2="490" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="260" y="512" text-anchor="middle" fill="#9ca3af" font-size="10" letter-spacing="1">Automated  ·  Reproducible  ·  Observable</text>
 </svg>
