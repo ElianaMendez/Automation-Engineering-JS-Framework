@@ -179,11 +179,15 @@ Typical workflow:
 ![CI Pipeline](./ci-pipeline-diagram.svg)
 
 
-Tools commonly used:
+Tools used:
 
 - Jenkins
 - Docker
 - Node.js environments
+<img width="1538" height="814" alt="image" src="https://github.com/user-attachments/assets/836c4c36-b784-462b-8d54-15057c926ece" />
+
+Repository:
+[Specialization_AT_JS_Results_Reporting](https://github.com/ElianaMendez/Specialization_AT_JS_Results_Reporting)
 
 ---
 
