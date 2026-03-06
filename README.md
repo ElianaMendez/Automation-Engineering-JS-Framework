@@ -176,6 +176,8 @@ Architecture principles used:
 Automation tests are designed to be executed as part of **continuous integration pipelines**.
 
 Typical workflow:
+
+
 ![CI Pipeline](./ci-pipeline-diagram.svg)
 
 
