@@ -99,6 +99,6 @@ If you're reviewing this for the first time, the recommended path is:
 
 I'm open to QA Automation Engineer roles and collaborations. Feel free to reach out:
 
-- **LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
-- **Email:** [your@email.com](mailto:your@email.com)
+- **LinkedIn:** [linkedin.com/in/eliana-margarita-mendez](https://www.linkedin.com/in/eliana-margarita-mendez/)
+- **Email:** [eliamargi@gmail.com](mailto:eliamargi@gmail.com)
 - **GitHub:** [github.com/ElianaMendez](https://github.com/ElianaMendez)
