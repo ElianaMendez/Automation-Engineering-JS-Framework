@@ -271,7 +271,7 @@ Environment | Node.js
 
 Eliana Méndez
 
-Senior QA Engineer specializing in **Automation Engineering within the JavaScript ecosystem**, focused on building scalable test automation frameworks and improving software quality through automation strategies.
+QA Engineer specializing in **Automation Engineering within the JavaScript ecosystem**, focused on building scalable test automation frameworks and improving software quality through automation strategies.
 
 
 
