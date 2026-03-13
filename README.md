@@ -16,13 +16,41 @@ Automation modules are implemented across the following repositories:
 
 | Repository | Purpose |
 |------------|--------|
-| Specialization_AT_JS_Scenarios | UI test automation with WebdriverIO |
-| Specialization_AT_JS_Testing_WebServices | API automation testing |
-| Specialization_AT_JS_Results_Reporting | Reporting and test result analysis |
+| Specialization_AT_JS_Scenarios | UI automation framework with WebdriverIO, BDD, and Page Object Model |
+| Specialization_AT_JS_Testing_WebServices | REST API testing framework with schema validation |
+| Specialization_AT_JS_Results_Reporting | Test reporting integration and code quality tooling. Jenkins CI pipeline executing automated tests |
 | Specialization_AT_JS_Chai | Assertion strategies using Chai |
 | Automation-Engineering-JS-Framework | Framework architecture documentation |
 
----
+# Project Structure Example
+
+```
+src
+├── business/po
+│   ├── pages
+│   └── step-definitions
+├── core
+│   ├── base
+│   └── helpers
+└── test
+    ├── data
+    └── features
+
+```
+- **Core layer:** framework utilities and shared functionality
+- **Business layer:** page objects and business logic
+- **Tests layer:** automated UI and API test scenarios
+
+# Automation Stack
+- **Automation Framework:** Playwright
+- **Language:** JavaScript
+- **Architecture:** Page Object Model (POM)
+- **API Testing:** Playwright API / REST validation
+- **Reporting:** Allure Reports, HTML reports
+- **CI/CD:** Jenkins, GitHub Actions
+- **Code Quality:** ESLint, Prettier
+- **Execution:** Parallel cross-browser testing
+- **Environment:** Node.js, Docker, WSL2
 
 # Implemented Automation Features
 
@@ -38,9 +66,9 @@ Benefits:
 - Reduced code duplication
 - Easier test maintenance
 
-Repository example:
+Repository:
 [Specialization_AT_JS_Scenarios](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios)
-
+Branch: main
 
 ---
 
@@ -67,6 +95,10 @@ Benefits:
 - Human-readable test scenarios
 - Better documentation of system behavior
 
+Repository:
+[Specialization_AT_JS_Scenarios](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios)
+Branch: main
+
 ---
 
 ## 3. UI Automation using WebdriverIO
@@ -83,7 +115,7 @@ Capabilities demonstrated:
 
 Repository:
 [Specialization_AT_JS_Scenarios](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios)
-
+Branch: main
 
 ---
 
@@ -107,6 +139,7 @@ Validations include:
 
 Repository:
 [Specialization_AT_JS_Testing_WebServices](https://github.com/ElianaMendez/Specialization_AT_JS_Testing_WebServices)
+Branch main
 
 
 ---
@@ -123,6 +156,7 @@ Interfaces used:
 
 Repository:
 [Specialization_AT_JS_Chai](https://github.com/ElianaMendez/Specialization_AT_JS_Chai)
+Branch: main
 
 
 ---
@@ -140,6 +174,7 @@ Reports include:
 
 Repository:
 [Specialization_AT_JS_Results_Reporting](https://github.com/ElianaMendez/Specialization_AT_JS_Results_Reporting)
+Branch: feature/reports
 
 
 ---
@@ -157,6 +192,10 @@ Benefits:
 - Reduced technical debt
 - Improved readability
 
+Repository:
+[Specialization_AT_JS_Results_Reporting](https://github.com/ElianaMendez/Specialization_AT_JS_Results_Reporting)
+Branch: feature/formatting
+
 ---
 
 ## 8. Modular Test Architecture
@@ -169,11 +208,25 @@ Architecture principles used:
 - Reusable test utilities
 - Layered testing structure
 
+Repository:
+[Specialization_AT_JS_Scenarios](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios)
+Branch: feature/refactor
+
 ---
 
 ## 9. CI/CD Integration
 
 Automation tests are designed to be executed as part of **continuous integration pipelines**.
+
+**GitHub Actions**
+Repository:
+[Specialization_AT_JS_Scenarios](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios)
+Branch: feature/typescript
+
+**Jenkins pipelines**
+Repository:
+[Specialization_AT_JS_Results_Reporting](https://github.com/ElianaMendez/Specialization_AT_JS_Results_Reporting)
+Branch: feature/ci-jenkins
 
 Typical workflow:
 
@@ -181,15 +234,11 @@ Typical workflow:
 ![CI Pipeline](./ci-pipeline-diagram.svg)
 
 
-Tools used:
+Jenkins pipelines utilized the following stack for execution:
 
-- Jenkins
-- Docker
-- Node.js environments
+
 <img width="1538" height="814" alt="image" src="https://github.com/user-attachments/assets/836c4c36-b784-462b-8d54-15057c926ece" />
 
-Repository:
-[Specialization_AT_JS_Results_Reporting](https://github.com/ElianaMendez/Specialization_AT_JS_Results_Reporting)
 
 ---
 
@@ -235,37 +284,6 @@ npm run test:api
 ```
 npm run report
 ```
-
----
-
-# Project Structure Example
-tests
-```
-├── features
-├── step-definitions
-├── pageobjects
-├── api
-├── assertions
-└── utils
-```
-
-
----
-
-# Technologies Used
-
-| Category | Tools |
-|--------|--------|
-Language | JavaScript
-Automation | WebdriverIO, Playwright
-API Testing | REST APIs
-Assertions | Chai
-Test Design | Cucumber (BDD)
-Code Quality | ESLint, Prettier
-DevOps | Jenkins, Docker
-Environment | Node.js
-
----
 
 # Author
 
