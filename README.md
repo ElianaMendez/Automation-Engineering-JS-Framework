@@ -34,7 +34,7 @@ This portfolio is organized as a progressive specialization — each repository 
 
 | # | Repository | Branch | What it demonstrates |
 |---|------------|--------|----------------------|
-| 1 | *(No repo)* | — | 8 Gherkin BDD scenarios covering sign-up, login, profile, cart, checkout, and more |
+| 1 | [Specialization_AT_JS_Scenarios](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios) | `main` | 8 Gherkin BDD scenarios covering sign-up, login, profile, cart, checkout, and more |
 | 2 | [Specialization_AT_JS_Scenarios](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios) | `main` | WDIO setup, headless multi-browser execution (Chrome, Firefox, Safari), parallel runs, retry logic |
 | 3 | [Specialization_AT_JS_Chai](https://github.com/ElianaMendez/Specialization_AT_JS_Chai) | `main` | Chai integration with Assert, Should, and Expect interfaces |
 | 4 | [Specialization_AT_JS_Scenarios](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios/tree/feature/refactor) | `feature/refactor` | Page Object Pattern, DRY/KISS/YAGNI principles, Core / Business / Tests layered architecture |
