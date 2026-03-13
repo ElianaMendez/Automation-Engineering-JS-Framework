@@ -1,299 +1,104 @@
-# Automation Engineering Framework – JavaScript Ecosystem
+# Eliana Mendez — QA Automation Engineer
 
-This project demonstrates the design and implementation of a **modular Test Automation Framework architecture** built within the JavaScript ecosystem.
-
-The goal of this framework is to showcase **real-world automation engineering practices**, including UI automation, API testing, BDD testing strategies, reporting, and CI/CD integration.
-
-This repository acts as the **central documentation hub** for the automation solutions implemented across multiple repositories.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
+[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:your@email.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat&logo=github&logoColor=white)](https://github.com/ElianaMendez)
 
 ---
 
-# Framework Architecture
+## About
 
-The automation framework follows a **modular architecture**, where each module represents a specific automation capability.
-
-Automation modules are implemented across the following repositories:
-
-| Repository | Purpose |
-|------------|--------|
-| Specialization_AT_JS_Scenarios | UI automation framework with WebdriverIO, BDD, and Page Object Model |
-| Specialization_AT_JS_Testing_WebServices | REST API testing framework with schema validation |
-| Specialization_AT_JS_Results_Reporting | Test reporting integration and code quality tooling. Jenkins CI pipeline executing automated tests |
-| Specialization_AT_JS_Chai | Assertion strategies using Chai |
-| Automation-Engineering-JS-Framework | Framework architecture documentation |
-
-# Project Structure Example
-
-```
-src
-├── business/po
-│   ├── pages
-│   └── step-definitions
-├── core
-│   ├── base
-│   └── helpers
-└── test
-    ├── data
-    └── features
-
-```
-- **Core layer:** framework utilities and shared functionality
-- **Business layer:** page objects and business logic
-- **Tests layer:** automated UI and API test scenarios
-
-# Automation Stack
-- **Automation Framework:** Playwright
-- **Language:** JavaScript
-- **Architecture:** Page Object Model (POM)
-- **API Testing:** Playwright API / REST validation
-- **Reporting:** Allure Reports, HTML reports
-- **CI/CD:** Jenkins, GitHub Actions
-- **Code Quality:** ESLint, Prettier
-- **Execution:** Parallel cross-browser testing
-- **Environment:** Node.js, Docker, WSL2
-
-# Implemented Automation Features
-
-Across these repositories, the framework demonstrates the implementation of **nine key automation features commonly used in real-world automation environments.**
-
-## 1. Page Object Model (POM)
-
-Implemented to separate **test logic from UI element locators**, improving maintainability and test readability.
-
-Benefits:
-
-- Reusable UI components
-- Reduced code duplication
-- Easier test maintenance
-
-Repository:
-[Specialization_AT_JS_Scenarios](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios)
-Branch: main
+I'm a QA Automation Engineer focused on building scalable, maintainable test automation frameworks for web applications and REST APIs. This portfolio documents a full specialization path — from writing structured BDD scenarios to implementing CI pipelines with Jenkins — applying industry-standard tools, design patterns, and best practices throughout.
 
 ---
 
-## 2. BDD Test Design with Cucumber
+## Skills & Technologies
 
-Tests are written using **Behavior Driven Development (BDD)** scenarios.
+**Test Automation**
+`WebdriverIO` · `Playwright` · `Cucumber` · `TypeScript` · `JavaScript` · `Node.js`
 
-Example structure:
+**Assertion & API Testing**
+`Chai` · `Axios` · `REST API Testing` · `Joi (schema validation)`
 
-**Feature:** Product Details on Practice Software Testing 
-As a customer I want to view detailed product information on https://practicesoftwaretesting.com/ So that I can make informed purchase decisions 
+**Architecture & Design**
+`Page Object Model` · `BDD / Gherkin` · `Layered Architecture (Core / Business / Tests)`
 
-**Scenario:** User views details of a selected product 
-
-**Given** the user is on the Practice Software Testing home page 
-**When** the user clicks on a product title or image 
-**Then** the system should display the product details page 
-**And** the page should show the product name, price, and description 
-
-
-Benefits:
-
-- Improved collaboration between QA, developers, and stakeholders
-- Human-readable test scenarios
-- Better documentation of system behavior
-
-Repository:
-[Specialization_AT_JS_Scenarios](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios)
-Branch: main
+**Code Quality & CI/CD**
+`ESLint` · `Prettier` · `Jenkins` · `GitHub Actions`
 
 ---
 
-## 3. UI Automation using WebdriverIO
+## Portfolio Overview
 
-Automated UI tests validate application behavior across different browser environments.
+This portfolio is organized as a progressive specialization — each repository and branch builds on the previous one, reflecting how a real test automation framework evolves over time.
 
-Capabilities demonstrated:
-
-- Browser interaction
-- Element validation
-- Navigation flows
-- Test retries
-- Parallel execution
-
-Repository:
-[Specialization_AT_JS_Scenarios](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios)
-Branch: main
-
----
-
-## 4. API Automation Testing
-
-API tests validate backend services through REST endpoints.
-
-Operations tested include:
-
-- Create resource
-- Retrieve resource
-- Update resource
-- Delete resource
-
-Validations include:
-
-- HTTP status codes
-- Response body validation
-- Header validation
-- Response structure validation
-
-Repository:
-[Specialization_AT_JS_Testing_WebServices](https://github.com/ElianaMendez/Specialization_AT_JS_Testing_WebServices)
-Branch main
-
+| # | Repository | Branch | What it demonstrates |
+|---|------------|--------|----------------------|
+| 1 | *(No repo)* | — | 8 Gherkin BDD scenarios covering sign-up, login, profile, cart, checkout, and more |
+| 2 | [Specialization_AT_JS_Scenarios](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios) | `main` | WDIO setup, headless multi-browser execution (Chrome, Firefox, Safari), parallel runs, retry logic |
+| 3 | [Specialization_AT_JS_Chai](https://github.com/ElianaMendez/Specialization_AT_JS_Chai) | `main` | Chai integration with Assert, Should, and Expect interfaces |
+| 4 | [Specialization_AT_JS_Scenarios](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios/tree/feature/refactor) | `feature/refactor` | Page Object Pattern, DRY/KISS/YAGNI principles, Core / Business / Tests layered architecture |
+| 5 | [Specialization_AT_JS_Testing_WebServices](https://github.com/ElianaMendez/Specialization_AT_JS_Testing_WebServices) | `main` | API test framework with Axios, full CRUD flows, response header/status/body/schema assertions |
+| 6 | [Specialization_AT_JS_Results_Reporting](https://github.com/ElianaMendez/Specialization_AT_JS_Results_Reporting) | `main` | Spec (console) + HTML reporters with Playwright, report files excluded from Git index |
+| 7 | [Specialization_AT_JS_Results_Reporting](https://github.com/ElianaMendez/Specialization_AT_JS_Results_Reporting/tree/feature/formatting) | `feature/formatting` | Prettier + ESLint with 4+ custom rules, linting scripts in package.json for UI and API |
+| 8 | [Specialization_AT_JS_Scenarios](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios/tree/feature/typescript) | `feature/typescript` | Cucumber + TypeScript migration, feature file tags, CLI script, CI integration |
+| 9 | [Specialization_AT_JS_Results_Reporting](https://github.com/ElianaMendez/Specialization_AT_JS_Results_Reporting/tree/feature/ci-jenkins) | `feature/ci-jenkins` | Jenkins pipelines for UI and API tests, scheduled execution every 2 hours, reporter plugin |
 
 ---
 
-## 5. Assertion Strategies with Chai
+## Repository Highlights
 
-Different assertion interfaces were implemented to validate application behavior.
+### UI Automation Framework — three-stage evolution
 
-Interfaces used:
+The [`Specialization_AT_JS_Scenarios`](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios) repository tells the clearest story of growth across this portfolio:
 
-- Assert
-- Expect
-- Should
+**Stage 1 — `main`:** Initial WDIO framework wired directly to BDD scenarios. Tests run in headless Chrome, Firefox, and Safari with 2 parallel instances and automatic retry on failure.
 
-Repository:
-[Specialization_AT_JS_Chai](https://github.com/ElianaMendez/Specialization_AT_JS_Chai)
-Branch: main
+**Stage 2 — `feature/refactor`:** Full architectural refactor using the Page Object Model. Code split into three distinct layers — Core (reusable utilities), Business (app-specific logic), and Tests (specs and config). All duplication eliminated following DRY, KISS, and YAGNI principles.
 
+**Stage 3 — `feature/typescript`:** Migration to Cucumber + TypeScript. Feature files enriched with tags, enabling targeted test runs via CLI. Integrated into CI to run on every push.
 
 ---
 
-## 6. Test Result Reporting
+### API Testing Framework
 
-Automation tests generate structured execution reports.
+[`Specialization_AT_JS_Testing_WebServices`](https://github.com/ElianaMendez/Specialization_AT_JS_Testing_WebServices) is a standalone API framework built against the [Restful Booker API](https://restful-booker.herokuapp.com/apidoc/index.html).
 
-Reports include:
-
-- Passed tests
-- Failed tests
-- Execution duration
-- Error stack traces
-
-Repository:
-[Specialization_AT_JS_Results_Reporting](https://github.com/ElianaMendez/Specialization_AT_JS_Results_Reporting)
-Branch: feature/reports
-
+Covers:
+- GET requests with filter combinations
+- Full CRUD flow: create → read → update → delete
+- Basic auth headers on protected endpoints (PUT, DELETE)
+- Assertions on response headers, status codes, response body, response time, and JSON schema (Joi)
+- Dedicated npm script to run API tests independently via CLI
 
 ---
 
-## 7. Code Quality Enforcement
+### CI & Reporting
 
-The framework enforces coding standards using tools such as:
+[`Specialization_AT_JS_Results_Reporting`](https://github.com/ElianaMendez/Specialization_AT_JS_Results_Reporting) brings together the cross-cutting concerns of the framework — reporting, code quality, and CI — each isolated in its own branch.
 
-- ESLint
-- Prettier
-
-Benefits:
-
-- Consistent code style
-- Reduced technical debt
-- Improved readability
-
-Repository:
-[Specialization_AT_JS_Results_Reporting](https://github.com/ElianaMendez/Specialization_AT_JS_Results_Reporting)
-Branch: feature/formatting
+- **`main`:** Playwright Spec reporter (console output) + HTML reporter; generated report folders excluded from Git via `.gitignore`
+- **`feature/formatting`:** Prettier for consistent formatting, ESLint with 4 custom rules, scripts added to `package.json` for both UI and API projects
+- **`feature/ci-jenkins`:** Two Jenkins pipelines cloning the repo and running UI and API tests independently, scheduled every 2 hours, with a reporter plugin displaying results in the Jenkins dashboard
 
 ---
 
-## 8. Modular Test Architecture
+## How to Navigate This Portfolio
 
-The framework is designed with **modularity in mind**, allowing individual components to evolve independently.
+If you're reviewing this for the first time, the recommended path is:
 
-Architecture principles used:
-
-- Separation of concerns
-- Reusable test utilities
-- Layered testing structure
-
-Repository:
-[Specialization_AT_JS_Scenarios](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios)
-Branch: feature/refactor
+1. Start with [`Specialization_AT_JS_Scenarios / main`](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios) to see the baseline framework
+2. Compare [`feature/refactor`](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios/tree/feature/refactor) to see how the architecture was improved
+3. Check [`feature/typescript`](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios/tree/feature/typescript) to see the Cucumber + TypeScript migration
+4. Review [`Specialization_AT_JS_Testing_WebServices`](https://github.com/ElianaMendez/Specialization_AT_JS_Testing_WebServices) for API test patterns
+5. Browse [`Specialization_AT_JS_Results_Reporting`](https://github.com/ElianaMendez/Specialization_AT_JS_Results_Reporting) for reporting, linting, and CI setup
 
 ---
 
-## 9. CI/CD Integration
+## Contact
 
-Automation tests are designed to be executed as part of **continuous integration pipelines**.
+I'm open to QA Automation Engineer roles and collaborations. Feel free to reach out:
 
-**GitHub Actions**
-Repository:
-[Specialization_AT_JS_Scenarios](https://github.com/ElianaMendez/Specialization_AT_JS_Scenarios)
-Branch: feature/typescript
-
-**Jenkins pipelines**
-Repository:
-[Specialization_AT_JS_Results_Reporting](https://github.com/ElianaMendez/Specialization_AT_JS_Results_Reporting)
-Branch: feature/ci-jenkins
-
-Typical workflow:
-
-
-![CI Pipeline](./ci-pipeline-diagram.svg)
-
-
-Jenkins pipelines utilized the following stack for execution:
-
-
-<img width="1538" height="814" alt="image" src="https://github.com/user-attachments/assets/836c4c36-b784-462b-8d54-15057c926ece" />
-
-
----
-
-# Framework Design Principles
-
-The framework implementation follows several **software engineering and test automation best practices.**
-
-## Separation of Concerns
-
-Test logic, test data, and UI interactions are separated into distinct layers.
-
-## Reusability
-
-Shared components such as page objects and utilities can be reused across multiple tests.
-
-## Maintainability
-
-The architecture minimizes coupling between components to allow easier updates.
-
-## Scalability
-
-The modular design allows the framework to scale as the test suite grows.
-
----
-
-# How to Run the Automation Tests
-
-## 1 Install dependencies
-```
-npm install
-```
-
----
-
-## 2 Execute UI tests
-```
-npm run test:api
-```
-
----
-
-## 4 Generate reports
-```
-npm run report
-```
-
-# Author
-
-Eliana Méndez
-
-QA Engineer specializing in **Automation Engineering within the JavaScript ecosystem**, focused on building scalable test automation frameworks and improving software quality through automation strategies.
-
-
-
-
-
-
-
+- **LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+- **Email:** [your@email.com](mailto:your@email.com)
+- **GitHub:** [github.com/ElianaMendez](https://github.com/ElianaMendez)
